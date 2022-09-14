@@ -4,8 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'backgroundprimary': '#01131D',
-        'backgroundsecondary': '#013747'
+        'secondaryColor': '#85A3B4',
+        'backgroundPrimary': '#01131D',
+        'backgroundSecondary': '#013747',
+        'textPrimary': '#E6EBEF'
+      },
+      fontFamily: {
+        'titleFont': 'SF Mono',
+        'primaryFont': 'Calibre'
       },
     },
   },

@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        @apply font-primaryFont
+    }
+
+
+    .burger-line {
+        @apply w-8 bg-gradient-to-r from-[#F47C20] to-[#F59A43];
+        border-radius: 1px;
+        height: 3px;
+    }
+
+    .myTitle {
+        @apply font-titleFont text-[#F59A43] text-xl ;
+
+    }
+
+    .text {
+        @apply text-secondaryColor text-lg;
+    }
+
+    .btn-primary-dark {
+        @apply text-xl;
+        text-align: center;
+        background-color: transparent;
+        color: #F59A43;
+        border: 2px solid #F47C20;
+        border-radius: 2px;
+        padding: 1rem 2rem 1rem 2rem;
+        /* width: max-content; */
+        width: 12.5rem;
+
+    }
+
+
+
+}
