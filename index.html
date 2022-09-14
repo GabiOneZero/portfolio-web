@@ -9,194 +9,200 @@
     <title>Gabriel Sánchez - Web Developer</title>
 </head>
 
-<body>
+<body >
+    <div id="main-background" class="bg-backgroundPrimary">
     <!----------------------------------------------------------------------------------------->
     <!-------------------------------------------- HEADER ------------------------------------->
     <!----------------------------------------------------------------------------------------->
-    <header>
-        <div id="header-container" class="bg-black">
-            <a href="index.html"><img src="images/LogoPersonalBranding.svg" alt="personal-logo"></a>
-            <div id="header-elements" hidden>
-                <img src="/images/icon-lang.svg" alt="language-icon">
-                <img src="/images/icon-theme" alt="switch-theme-icon">
+        <header>
+            <div id="header-container" class="flex flex-row items-center justify-between p-6 border-b-2 border-backgroundSecondary">
+                <a href="index.html"><img src="images/LogoPersonalBranding.svg" alt="personal-logo"></a>
+              <!--   <div id="header-elements" hidden>
+                    <img src="/images/icon-lang.svg" alt="language-icon">
+                    <img src="/images/icon-theme" alt="switch-theme-icon">
+                </div> -->
+                <nav id="burger-menu" class="flex flex-col items-center space-y-2"> 
+                    <div class="burger-line"></div>
+                    <div class="w-6 burger-line"></div>
+                    <div class="burger-line"></div>
+                </nav>
+                <nav id="menu" class="hidden">
+                    <div id="menu-items">
+                        <a href="#about" class="menu-item">Sobre mí</a>
+                        <a href="#projects" class="menu-item">Sobre mí</a>
+                        <a href="#experience" class="menu-item">Sobre mí</a>
+                        <a href="#contact" class="menu-item">Sobre mí</a>
+                        <a href="#" class="btn-primary-dark">CV</a>
+                    </div>
+                    <div id="menu-social-media-links">
+                        <a href="https://www.linkedin.com/in/gabidev/"><img src="images/icon/linkedin.svg" alt="linkedin-icon"></a>
+                        <a href="https://instagram.com/gabionezero"><img src="images/icon/instagram.svg" alt="instagram-icon"></a>
+                        <a href="https://twitter.com/gabionezero"><img src="images/icon/twitter.svg" alt="twitter-icon"></a>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                    </div>
+                </nav>
             </div>
-            <nav id="burger-menu"> 
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
+        </header>
+        <!----------------------------------------------------------------------------------------->
+        <!--------------------------------------------- MAIN -------------------------------------->
+        <!----------------------------------------------------------------------------------------->
+
+        <main>
+            <section id="introduction-container" class="bg-[url('/images/LogoFondo.svg')] mt-12 bg-cover w-full bg-no-repeat ">
+                <h3 id="greeting" class="myTitle">Hello there!</h3>
+                <h1 id="name" class="font-semibold text-[2.5rem] font-primaryFont text-textPrimary ">Gabriel Sánchez</h1>
+                <h3 id="role" class="text-[1.75rem] font-primaryFont text-textPrimary">Desarrollador Full Stack</h3>
+                <p id="introduction-text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum
+                    doloremque numquam fugit, at impedit libero, ipsum assumenda porro laborum, et asperiores quo! Quasi
+                    provident doloremque rerum deserunt, aperiam earum.</p>
+                <div id="btn-contact" class="btn-primary-dark">
+                    <a href="#contact">Pásate a saludar</a>
+                </div>
+            </section>
+
+            <section id="about">
+                <div>
+                    <h3 id="about-title" class="title">Sobre mí</h3>
+                    <span class="separator"></span>
+                </div>
+                <img src="/images/me.png" alt="me-photography">
+                <p id="about-text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam. Libero
+                    ipsa optio distinctio saepe reprehenderit quisquam ab sequi temporibus nemo labore, molestiae
+                    consequatur quos sint ducimus cumque soluta veritatis?</p>
+                <div id="btn-cv" class="btn-primary-dark">
+                    <a href="#" >CV</a>
+                </div> 
+            </section>
+
+            <section id="projects">
+                <div>
+                    <h3 id="projects-title" class="title">Proyectos</h3>
+                    <span class="separator"></span>
+                </div>
+                <article class="card-project">
+                    <div id="label" class="label"><span>Project name</span></div>
+                    <img src="/images/proyecto1.png" alt="proyecto1">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img src="/images/proyecto1.png" alt="proyecto1">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img src="/images/proyecto1.png" alt="proyecto1">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img src="/images/proyecto1.png" alt="proyecto1">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img src="/images/proyecto1.png" alt="proyecto1">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img src="/images/proyecto1.png" alt="proyecto1">
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </article>
+            </section>
+            <section id="experience">
+                <div>
+                    <h3 id="experience-title" class="title">Experiencia</h3>
+                    <span class="separator"></span>
+                </div>
+                <div id="card-tabs-exp">
+                    <div class="card-exp">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                    <div class="card-exp">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div>
+                    <h3 id="contact-title" class="title">Escríbeme</h3>
+                    <span class="separator"></span>
+                </div>
+                <p></p>
+                <div id="personal-info">
+                    <div id="location">
+                        <img src="images/icon/location.svg" alt="location-icon">
+                        <p>Marbella (Málaga)</p>
+                    </div>
+                    <div id="phone">
+                        <img src="images/icon/phone.svg" alt="phone-icon">
+                        <p>(+34) 617 843 262</p>
+                    </div>
+                    <div id="email">
+                        <img src="images/icon/email.svg" alt="email-icon">
+                        <p>gabionezero@gmail.com</p>
+                    </div>
+                    <img src="images/icon/logo.svg" alt="logo-icon">
+                </div>
+                <form action="#">
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <input type="email" name="email" id="name" placeholder="Correo">
+                    <textarea name="message" id="message" cols="30" rows="10" style="resize: none;"
+                        placeholder="Mensaje"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+
+
+        <!----------------------------------------------------------------------------------------->
+        <!-------------------------------------------- FOOTER ------------------------------------->
+        <!----------------------------------------------------------------------------------------->
+        <footer>
+            <nav id="social-media-links">
+                <a href="https://www.linkedin.com/in/gabidev/"><img src="images/icon/linkedin.svg" alt="linkedin-icon"></a>
+                <a href="https://instagram.com/gabionezero"><img src="images/icon/instagram.svg" alt="instagram-icon"></a>
+                <a href="https://twitter.com/gabionezero"><img src="images/icon/twitter.svg" alt="twitter-icon"></a>
+                <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
             </nav>
-            <nav id="menu">
-                <div id="menu-items">
-                    <a href="#about" class="menu-item">Sobre mí</a>
-                    <a href="#projects" class="menu-item">Sobre mí</a>
-                    <a href="#experience" class="menu-item">Sobre mí</a>
-                    <a href="#contact" class="menu-item">Sobre mí</a>
-                    <a href="#" class="btn-primary-dark">CV</a>
-                </div>
-                <div id="menu-social-media-links">
-                    <a href="https://www.linkedin.com/in/gabidev/"><img src="images/icon/linkedin.svg" alt="linkedin-icon"></a>
-                    <a href="https://instagram.com/gabionezero"><img src="images/icon/instagram.svg" alt="instagram-icon"></a>
-                    <a href="https://twitter.com/gabionezero"><img src="images/icon/twitter.svg" alt="twitter-icon"></a>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!----------------------------------------------------------------------------------------->
-    <!--------------------------------------------- MAIN -------------------------------------->
-    <!----------------------------------------------------------------------------------------->
-
-    <main>
-        <section id="introduction-container">
-            <h3 id="greeting">Hello there!</h3>
-            <h2 id="name">Gabriel Sánchez</h2>
-            <h2 id="role">desarrollador web</h2>
-            <p id="introduction-text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum
-                doloremque numquam fugit, at impedit libero, ipsum assumenda porro laborum, et asperiores quo! Quasi
-                provident doloremque rerum deserunt, aperiam earum.</p>
-            <a href="#contact" id="btn-contact" class="btn-primary-dark">Pásate a saludar</a>
-        </section>
-
-        <section id="about">
-            <div>
-                <h3 id="about-title" class="title">Sobre mí</h3>
-                <span class="separator"></span>
+            <div id="footer-msg">
+                <small>Diseñado y desarrollado por Gabriel Sánchez</small>
+                <small>2022</small>
             </div>
-            <img src="/images/me.png" alt="me-photography">
-            <p id="about-text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ullam. Libero
-                ipsa optio distinctio saepe reprehenderit quisquam ab sequi temporibus nemo labore, molestiae
-                consequatur quos sint ducimus cumque soluta veritatis?</p>
-            <a href="#" class="btn-primary-dark">CV</a>
-        </section>
-
-        <section id="projects">
-            <div>
-                <h3 id="projects-title" class="title">Proyectos</h3>
-                <span class="separator"></span>
-            </div>
-            <article class="card-project">
-                <div id="label" class="label"><span>Project name</span></div>
-                <img src="/images/proyecto1.png" alt="proyecto1">
-                <p></p>
-                <p></p>
-                <div>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </article>
-            <article class="card-project">
-                <img src="/images/proyecto1.png" alt="proyecto1">
-                <p></p>
-                <p></p>
-                <div>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </article>
-            <article class="card-project">
-                <img src="/images/proyecto1.png" alt="proyecto1">
-                <p></p>
-                <p></p>
-                <div>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </article>
-            <article class="card-project">
-                <img src="/images/proyecto1.png" alt="proyecto1">
-                <p></p>
-                <p></p>
-                <div>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </article>
-            <article class="card-project">
-                <img src="/images/proyecto1.png" alt="proyecto1">
-                <p></p>
-                <p></p>
-                <div>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </article>
-            <article class="card-project">
-                <img src="/images/proyecto1.png" alt="proyecto1">
-                <p></p>
-                <p></p>
-                <div>
-                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </article>
-        </section>
-        <section id="experience">
-            <div>
-                <h3 id="experience-title" class="title">Experiencia</h3>
-                <span class="separator"></span>
-            </div>
-            <div id="card-tabs-exp">
-                <div class="card-exp">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-                <div class="card-exp">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <a href=""><img src="images/icon/link.svg" alt="link-icon"></a>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div>
-                <h3 id="contact-title" class="title">Escríbeme</h3>
-                <span class="separator"></span>
-            </div>
-            <p></p>
-            <div id="personal-info">
-                <div id="location">
-                    <img src="images/icon/location.svg" alt="location-icon">
-                    <p>Marbella (Málaga)</p>
-                </div>
-                <div id="phone">
-                    <img src="images/icon/phone.svg" alt="phone-icon">
-                    <p>(+34) 617 843 262</p>
-                </div>
-                <div id="email">
-                    <img src="images/icon/email.svg" alt="email-icon">
-                    <p>gabionezero@gmail.com</p>
-                </div>
-                <img src="images/icon/logo.svg" alt="logo-icon">
-            </div>
-            <form action="#">
-                <input type="text" name="name" id="name" placeholder="Nombre">
-                <input type="email" name="email" id="name" placeholder="Correo">
-                <textarea name="message" id="message" cols="30" rows="10" style="resize: none;"
-                    placeholder="Mensaje"></textarea>
-                <button>Enviar</button>
-            </form>
-        </section>
-    </main>
-
-
-    <!----------------------------------------------------------------------------------------->
-    <!-------------------------------------------- FOOTER ------------------------------------->
-    <!----------------------------------------------------------------------------------------->
-    <footer>
-        <nav id="social-media-links">
-            <a href="https://www.linkedin.com/in/gabidev/"><img src="images/icon/linkedin.svg" alt="linkedin-icon"></a>
-            <a href="https://instagram.com/gabionezero"><img src="images/icon/instagram.svg" alt="instagram-icon"></a>
-            <a href="https://twitter.com/gabionezero"><img src="images/icon/twitter.svg" alt="twitter-icon"></a>
-            <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-        </nav>
-        <div id="footer-msg">
-            <small>Diseñado y desarrollado por Gabriel Sánchez</small>
-            <small>2022</small>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
 </body>
 
