@@ -22,12 +22,12 @@
     }
 
     .myTitle {
-        @apply font-titleFont text-[#F59A43] text-xl ;
+        @apply font-titleFont text-[#F59A43] text-2xl pb-9 w-52;
 
     }
 
     .text {
-        @apply text-secondaryColor text-lg;
+        @apply text-secondaryColor text-xl py-6;
     }
 
     .btn-primary-dark {
@@ -36,13 +36,21 @@
         background-color: transparent;
         color: #F59A43;
         border: 2px solid #F47C20;
-        border-radius: 2px;
-        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 4px;
+        padding: 0.8rem 1rem 0.8rem 1rem;
         /* width: max-content; */
         width: 12.5rem;
-
+        cursor: pointer;
     }
 
+    .separator {
+        @apply bg-backgroundSecondary mb-8;
+        width: 100%;
+        height: 2px;
+    }
 
+    .section-container {
+        @apply w-[80%] flex flex-col mx-auto justify-between pt-24;
+    }
 
 }
