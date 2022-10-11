@@ -48,8 +48,9 @@
         <!----------------------------------------------------------------------------------------->
 
         <main>
-            <section id="introduction" class="bg-[url('/images/LogoFondo.svg')] mt-12 bg-contain w-screen bg-no-repeat h-[40rem]">
-                <div id="introduction-container" class="section-container">
+            <section id="introduction" class="mt-12 h-[40rem]">
+                <img src="/images/LogoFondo.svg" alt="Logo Fondo" class="absolute z-0 w-screen">
+                <div id="introduction-container" class="relative z-10 section-container">
                     <h3 id="greeting" class="myTitle">Hello there!</h3>
                     <h1 id="name" class="font-semibold text-[2.75rem] font-primaryFont text-textPrimary h-14">Gabriel Sánchez</h1>
                     <h3 id="role" class="text-[1.75rem] font-primaryFont text-textPrimary">Desarrollador Full Stack</h3>
@@ -202,17 +203,21 @@
         <!----------------------------------------------------------------------------------------->
         <!-------------------------------------------- FOOTER ------------------------------------->
         <!----------------------------------------------------------------------------------------->
-        <footer>
-            <nav id="social-media-links">
-                <a href="https://www.linkedin.com/in/gabidev/"><img src="images/icon/linkedin.svg" alt="linkedin-icon"></a>
-                <a href="https://instagram.com/gabionezero"><img src="images/icon/instagram.svg" alt="instagram-icon"></a>
-                <a href="https://twitter.com/gabionezero"><img src="images/icon/twitter.svg" alt="twitter-icon"></a>
-                <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
-            </nav>
-            <div id="footer-msg">
-                <small>Diseñado y desarrollado por Gabriel Sánchez</small>
-                <small>2022</small>
+        <footer class="relative bottom-0 flex justify-center">
+            <img src="/images/LogoFondoFooter.svg" alt="Logo footer" class="w-screen">
+            <div class="absolute flex flex-col h-20 bottom-10">
+                <nav id="social-media-links" class="flex flex-row h-full">
+                    <a href="https://www.linkedin.com/in/gabidev/"><img src="images/icon/linkedin.svg" alt="linkedin-icon"></a>
+                    <a href="https://instagram.com/gabionezero"><img src="images/icon/instagram.svg" alt="instagram-icon"></a>
+                    <a href="https://twitter.com/gabionezero"><img src="images/icon/twitter.svg" alt="twitter-icon"></a>
+                    <a href="https://github.com/GabiOneZero"><img src="images/icon/github.svg" alt="github-icon"></a>
+                </nav>
+                <div id="footer-msg" class="flex flex-col text-secondaryColor">
+                    <small>Diseñado y desarrollado por Gabriel Sánchez</small>
+                    <small>2022</small>
+                </div>
             </div>
+           
         </footer>
     </div>
 
