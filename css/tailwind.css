@@ -620,7 +620,31 @@ html {
   width: 80%;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 6rem;
+  padding-top: 5rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mt-12 {
@@ -641,6 +665,30 @@ html {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-\[22\.5rem\] {
+  height: 22.5rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-6 {
@@ -667,6 +715,10 @@ html {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -689,18 +741,6 @@ html {
 .bg-backgroundPrimary {
   --tw-bg-opacity: 1;
   background-color: rgb(1 19 29 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/images\/LogoFondo\.svg\'\)\] {
-  background-image: url('/images/LogoFondo.svg');
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .p-6 {
@@ -726,4 +766,9 @@ html {
 .text-textPrimary {
   --tw-text-opacity: 1;
   color: rgb(230 235 239 / var(--tw-text-opacity));
+}
+
+.text-secondaryColor {
+  --tw-text-opacity: 1;
+  color: rgb(133 163 180 / var(--tw-text-opacity));
 }

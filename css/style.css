@@ -50,7 +50,7 @@
     }
 
     .section-container {
-        @apply w-[80%] flex flex-col mx-auto justify-between pt-24;
+        @apply w-[80%] flex flex-col mx-auto justify-between pt-20;
     }
 
 }
