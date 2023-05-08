@@ -3,11 +3,18 @@
     --backgroundSecondary: #013747;
     --textSecondary: #85A3B4;
     --textPrimary: #E6EBEF;
-    --highlightColor: #F59A43;
+    --highlightPrimary: #F59A43;
+    --highlightSecondary: #F47C20;
 }
 
 html{
     background-color: var(--backgroundPrimary);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--textSecondary)
+    color: var(--textSecondary);
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
