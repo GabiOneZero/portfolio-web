@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PortfolioWeb</title>
+  <title>Gabriel Sánchez - Portfolio Web</title>
+  <script>
+		let tituloOriginal = document.title;
+		window.onblur = function(){ 
+			document.title = "Hey, come back!";
+		}
+
+		window.onfocus = function(){
+		  document.title = tituloOriginal;
+		}
+	</script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
