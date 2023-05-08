@@ -1,0 +1,68 @@
+.navbar-container{
+    height: 10vh;
+    width: 100%;
+    border-bottom: 2px solid var(--backgroundSecondary);    
+}
+
+.navbar-body{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .navbar-container a, .navbar-container div{
+    padding: 0em 1.5em;
+} */
+
+.navbar--logo-home{
+    height: 2.2em;   
+    transition: height 150ms; 
+}
+
+.navbar--link-home{
+    width: 2.5em;    
+}
+
+.navbar--logo-home:hover{
+    height: 2.5em;    
+}
+
+.navbar--logo-home:active {
+	position:relative;
+	top: 2px;
+}
+
+.main-button {
+	background: transparent;   
+	border-radius: 5px;
+    will-change: background;
+    transition: background 200ms;
+	border: 2px solid var(--highlightPrimary);
+	cursor:pointer;
+	color:var(--highlightPrimary);
+	font-size: 1.1em;
+    font-weight: 500;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+}
+.main-button:hover {
+    color: var(--textPrimary);    
+    transition: background 200ms;
+    background: var(--highlightPrimary);
+    background-image: linear-gradient(90deg, var(--highlightPrimary) 0%, var(--highlightSecondary) 100%); 
+}
+.main-button:active {
+	position:relative;
+	top: 1px;
+}
+
+.navbar--icon-language{
+    height: 1.5em;
+}
+
+.navbar--icon-theme{
+    height: 1.5em;
+}
