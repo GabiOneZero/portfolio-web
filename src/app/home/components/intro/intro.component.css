@@ -1,0 +1,56 @@
+.intro-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.intro-container > div{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.logo-fondo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    z-index: -1;
+    height: 70%;
+}
+
+.greeting-text{
+    font-weight: 100;
+    color: var(--highlightPrimary);
+}
+
+.name-intro{
+    font-weight: bold;
+    color: var(--textPrimary);
+}
+
+.main-button {
+	background: transparent;   
+	border-radius: 5px;
+    will-change: background;
+    transition: background 200ms;
+	border: 2px solid var(--highlightPrimary);
+	cursor:pointer;
+	color:var(--highlightPrimary);
+	font-size: 1.1em;
+    font-weight: 500;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+}
+.main-button:hover {
+    color: var(--textPrimary);    
+    transition: background 200ms;
+    background: var(--highlightPrimary);
+    background-image: linear-gradient(90deg, var(--highlightPrimary) 0%, var(--highlightSecondary) 100%); 
+}
+.main-button:active {
+	position:relative;
+	top: 1px;
+}
+
+
