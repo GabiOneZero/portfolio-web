@@ -16,7 +16,6 @@
     left: 50%;
     transform: translate(-35%, -50%);
     z-index: -1;
-    height: 70%;
 }
 
 .greeting-text{
@@ -25,8 +24,19 @@
 }
 
 .name-intro{
+    font-size: 2.8em;
     font-weight: bold;
     color: var(--textPrimary);
+    margin: 0;
+}
+
+.title-intro{
+    font-size: 2em;
+    margin: 0;
+}
+
+.description-intro{
+    margin: 2em 0;
 }
 
 .main-button {
